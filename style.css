@@ -1,0 +1,123 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+#container{
+    width: auto;
+    height: 740px;
+    background-image: url(bg2.jpg);
+}
+
+#platform{
+    width: 350px;
+    height: 550px;
+    background-color: silver;
+    margin: 0 auto;
+    top: 75px;
+    position: relative;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2),0 6px 2px 0 rgba(0, 0, 0, 2);
+}
+#main{
+    padding-top: 20px;
+    text-align: center;
+    font-size: x-large;
+    color: blue;
+    cursor: pointer;
+}
+.content{
+    width:350px;
+    max-width: 340px;
+    height: 350px;
+    max-height:350px;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:blue;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:60px;
+    top: 15px;
+    max-width:285px;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    left:285px;
+    top: 10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.add{
+    position: fixed;
+    top: 575px;
+    width: 285px;
+    height:35px;
+    padding: 10px;
+}
+.add i{
+    position: absolute;
+    font-size: 35px;
+    color: blue;
+}
+.add input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 285px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+}
+@keyframes example {
+    0%   {color: red;}
+    15%  {color: orange;}
+    30% {color:yellow;}
+    45%  {color: green;}
+    60% {color: blue;}
+    75%{color: indigo;}
+    100%{color:purple;}
+  }
+#credits{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
